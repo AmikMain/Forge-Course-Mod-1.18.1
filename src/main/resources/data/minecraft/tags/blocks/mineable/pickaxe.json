@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "coursemod:tungsten_block",
+    "coursemod:raw_tungsten_block",
+    "coursemod:tungsten_ore",
+    "coursemod:deepslate_tungsten_ore",
+    "coursemod:speedy_block"
+  ]
+}

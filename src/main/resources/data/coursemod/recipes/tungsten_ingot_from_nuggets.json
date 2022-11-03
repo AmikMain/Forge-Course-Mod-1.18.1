@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "coursemod:tungsten_nugget"
+    }
+  },
+  "result": {
+    "item": "coursemod:tungsten_ingot"
+  }
+}

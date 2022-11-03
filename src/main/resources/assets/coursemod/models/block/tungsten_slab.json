@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "coursemod:block/tungsten_block",
+    "top": "coursemod:block/tungsten_block",
+    "side": "coursemod:block/tungsten_block"
+  }
+}

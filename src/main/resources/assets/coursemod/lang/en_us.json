@@ -1,0 +1,28 @@
+{
+  "item.coursemod.tungsten_ingot": "Tungsten Ingot",
+  "item.coursemod.tungsten_nugget": "Tungsten Nugget",
+  "item.coursemod.raw_tungsten": "Raw Tungsten",
+  "item.coursemod.dowsing_rod": "Dowsing Rod",
+  "item.coursemod.firewood": "Firewood item",
+  "item.coursemod.pancake": "Pancake",
+
+  "block.coursemod.tungsten_block": "Tungsten Block",
+  "block.coursemod.tungsten_ore": "Tungsten Ore",
+  "block.coursemod.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "block.coursemod.raw_tungsten_block": "Raw Tungsten Block",
+  "block.coursemod.speedy_block": "Speedy Block",
+  "block.coursemod.tungsten_stairs": "Tungsten Stairs",
+  "block.coursemod.tungsten_slab": "Tungsten Slab",
+  "block.coursemod.tungsten_button": "Tungsten Button",
+  "block.coursemod.tungsten_pressure_plate": "Tungsten Pressure Plate",
+  "block.coursemod.tungsten_fence": "Tungsten Fence",
+  "block.coursemod.tungsten_fence_gate": "Tungsten Fence Gate",
+  "block.coursemod.tungsten_wall": "Tungsten Wall",
+
+  "itemGroup.coursemodtab": "Course Mod",
+
+  "item.coursemod.dowsing_rod.no_valuables": "Nothing valuable found",
+  "tooltip.coursemod.dowsing_rod.tooltip.shift": "Right click on block to find valuable ores",
+  "tooltip.coursemod.dowsing_rod.tooltip": "Press [Shift] for more information."
+
+}
