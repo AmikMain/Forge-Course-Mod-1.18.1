@@ -49,13 +49,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> TUNGSTEN_PRESSURE_PLATE = registerBlock("tungsten_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.COURSE_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_FENCE = registerBlock("tungsten_block",
+    public static final RegistryObject<Block> TUNGSTEN_FENCE = registerBlock("tungsten_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_FENCE_GATE = registerBlock("tungsten_block",
+    public static final RegistryObject<Block> TUNGSTEN_FENCE_GATE = registerBlock("tungsten_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_WALL = registerBlock("tungsten_block",
+    public static final RegistryObject<Block> TUNGSTEN_WALL = registerBlock("tungsten_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
