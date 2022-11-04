@@ -1,6 +1,7 @@
 package net.amik.coursemod.block;
 
 import net.amik.coursemod.CourseMod;
+import net.amik.coursemod.block.custom.SemiDoorBlock;
 import net.amik.coursemod.block.custom.SpeedyBlock;
 import net.amik.coursemod.item.ModCreativeModeTab;
 import net.amik.coursemod.item.ModItems;
@@ -59,7 +60,7 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> TUNGSTEN_DOOR = registerBlock("tungsten_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+            () -> new SemiDoorBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor",
