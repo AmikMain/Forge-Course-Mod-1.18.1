@@ -6,6 +6,12 @@
   "item.coursemod.firewood": "Firewood item",
   "item.coursemod.pancake": "Pancake",
 
+  "item.coursemod.tungsten_sword": "Tungsten Sword",
+  "item.coursemod.tungsten_shovel": "Tungsten Shovel",
+  "item.coursemod.tungsten_axe": "Tungsten Axe",
+  "item.coursemod.tungsten_pickaxe": "Tungsten Pickaxe",
+  "item.coursemod.tungsten_hoe": "Tungsten Hoe",
+
   "block.coursemod.tungsten_block": "Tungsten Block",
   "block.coursemod.tungsten_ore": "Tungsten Ore",
   "block.coursemod.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
