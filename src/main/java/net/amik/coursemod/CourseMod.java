@@ -2,6 +2,8 @@ package net.amik.coursemod;
 
 import net.amik.coursemod.block.ModBlocks;
 import net.amik.coursemod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,6 +12,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -38,6 +41,7 @@ public class CourseMod
         ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
+        eventBus.addListener(this::clientSetup);
         // Register the enqueueIMC method for modloading
 
 
@@ -45,11 +49,23 @@ public class CourseMod
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    // add to the MCCourseMod Constructor
+    //
+
+    // Add Method
+    private void clientSetup(final FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_TRAPDOOR.get(), RenderType.cutout());
+    }
+
+
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+
+
 
 }

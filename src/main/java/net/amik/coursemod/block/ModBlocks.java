@@ -58,6 +58,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> TUNGSTEN_WALL = registerBlock("tungsten_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> TUNGSTEN_DOOR = registerBlock("tungsten_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn =  BLOCKS.register(name,block);
         registerBlockItem(name, toReturn, tab);
