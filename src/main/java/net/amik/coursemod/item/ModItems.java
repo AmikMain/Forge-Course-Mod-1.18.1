@@ -39,7 +39,7 @@ public class ModItems {
             () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_SHOVEL = ITEMS.register("tungsten_shovel",
-            () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, 1f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new ShovelItem(ModTiers.TUNGSTEN, 2, 1f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_AXE = ITEMS.register("tungsten_axe",
             () -> new AxeItem(ModTiers.TUNGSTEN, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
