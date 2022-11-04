@@ -4,6 +4,7 @@ import net.amik.coursemod.CourseMod;
 import net.amik.coursemod.item.custom.DowsingRodItem;
 import net.amik.coursemod.item.custom.FireWoodItem;
 import net.amik.coursemod.item.custom.ModTiers;
+import net.amik.coursemod.item.custom.PaxelItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -36,7 +37,7 @@ public class ModItems {
             () -> new SwordItem(ModTiers.TUNGSTEN, 4, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_PICKAXE = ITEMS.register("tungsten_pickaxe",
-            () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, -2.2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_SHOVEL = ITEMS.register("tungsten_shovel",
             () -> new ShovelItem(ModTiers.TUNGSTEN, 3, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
@@ -47,7 +48,8 @@ public class ModItems {
     public static final RegistryObject<Item> TUNGSTEN_HOE = ITEMS.register("tungsten_hoe",
             () -> new HoeItem(ModTiers.TUNGSTEN, 1, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
-
+    public static final RegistryObject<Item> TUNGSTEN_PAXEL = ITEMS.register("tungsten_paxel",
+            () -> new PaxelItem(ModTiers.TUNGSTEN, 0, -3f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

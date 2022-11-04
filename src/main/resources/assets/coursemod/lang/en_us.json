@@ -11,6 +11,7 @@
   "item.coursemod.tungsten_axe": "Tungsten Axe",
   "item.coursemod.tungsten_pickaxe": "Tungsten Pickaxe",
   "item.coursemod.tungsten_hoe": "Tungsten Hoe",
+  "item.coursemod.tungsten_paxel": "Tungsten Paxel",
 
   "block.coursemod.tungsten_block": "Tungsten Block",
   "block.coursemod.tungsten_ore": "Tungsten Ore",
@@ -30,7 +31,7 @@
   "itemGroup.coursemodtab": "Course Mod",
 
   "item.coursemod.dowsing_rod.no_valuables": "Nothing valuable found",
-  "tooltip.coursemod.dowsing_rod.tooltip.shift": "Right click on block to find valuable ores",
+  "tooltip.coursemod.dowsing_rod.tooltip.shift": "Press [Shift] for more information.\n\nRight click on block to find valuable ores",
   "tooltip.coursemod.dowsing_rod.tooltip": "Press [Shift] for more information."
 
 }
