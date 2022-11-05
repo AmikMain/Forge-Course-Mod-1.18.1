@@ -60,6 +60,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots",
             () -> new ArmorItem(ModArmorMaterials.TUNGSTEN, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> TUNGSTEN_HORSE_ARMOR = ITEMS.register("tungsten_horse_armor",
+            () -> new HorseArmorItem(12, "tungsten", new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
