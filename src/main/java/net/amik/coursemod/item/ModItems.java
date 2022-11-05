@@ -34,22 +34,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).food(ModFoods.PANCAKE)));
 
     public static final RegistryObject<Item> TUNGSTEN_SWORD = ITEMS.register("tungsten_sword",
-            () -> new SwordItem(ModTiers.TUNGSTEN, 4, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new SwordItem(ModTiers.TUNGSTEN, 3, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_PICKAXE = ITEMS.register("tungsten_pickaxe",
-            () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_SHOVEL = ITEMS.register("tungsten_shovel",
-            () -> new ShovelItem(ModTiers.TUNGSTEN, 3, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new ShovelItem(ModTiers.TUNGSTEN, 2, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_AXE = ITEMS.register("tungsten_axe",
-            () -> new AxeItem(ModTiers.TUNGSTEN, 5, -3f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new AxeItem(ModTiers.TUNGSTEN, 4, -1f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_HOE = ITEMS.register("tungsten_hoe",
-            () -> new HoeItem(ModTiers.TUNGSTEN, 1, -2f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new HoeItem(ModTiers.TUNGSTEN, 0, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_PAXEL = ITEMS.register("tungsten_paxel",
-            () -> new PaxelItem(ModTiers.TUNGSTEN, 0, -3f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new PaxelItem(ModTiers.TUNGSTEN, 0, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
