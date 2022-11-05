@@ -13,6 +13,11 @@
   "item.coursemod.tungsten_hoe": "Tungsten Hoe",
   "item.coursemod.tungsten_paxel": "Tungsten Paxel",
 
+  "item.coursemod.tungsten_helmet": "Tungsten Helmet",
+  "item.coursemod.tungsten_chestplate": "Tungsten Chestplate",
+  "item.coursemod.tungsten_leggings": "Tungsten Leggings",
+  "item.coursemod.tungsten_boots": "Tungsten Boots",
+
   "block.coursemod.tungsten_block": "Tungsten Block",
   "block.coursemod.tungsten_ore": "Tungsten Ore",
   "block.coursemod.deepslate_tungsten_ore": "Deepslate Tungsten Ore",

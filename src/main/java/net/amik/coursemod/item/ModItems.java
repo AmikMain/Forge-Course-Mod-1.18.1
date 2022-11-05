@@ -1,10 +1,8 @@
 package net.amik.coursemod.item;
 
 import net.amik.coursemod.CourseMod;
-import net.amik.coursemod.item.custom.DowsingRodItem;
-import net.amik.coursemod.item.custom.FireWoodItem;
-import net.amik.coursemod.item.custom.ModTiers;
-import net.amik.coursemod.item.custom.PaxelItem;
+import net.amik.coursemod.item.custom.*;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -34,7 +32,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).food(ModFoods.PANCAKE)));
 
     public static final RegistryObject<Item> TUNGSTEN_SWORD = ITEMS.register("tungsten_sword",
-            () -> new SwordItem(ModTiers.TUNGSTEN, 3, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new LevitationSwordItem(ModTiers.TUNGSTEN, 3, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> TUNGSTEN_PICKAXE = ITEMS.register("tungsten_pickaxe",
             () -> new PickaxeItem(ModTiers.TUNGSTEN, 2, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
@@ -51,6 +49,17 @@ public class ModItems {
     public static final RegistryObject<Item> TUNGSTEN_PAXEL = ITEMS.register("tungsten_paxel",
             () -> new PaxelItem(ModTiers.TUNGSTEN, 0, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
+    public static final RegistryObject<Item> TUNGSTEN_HELMET = ITEMS.register("tungsten_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TUNGSTEN, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> TUNGSTEN_CHESTPLATE = ITEMS.register("tungsten_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TUNGSTEN, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> TUNGSTEN_LEGGINGS = ITEMS.register("tungsten_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TUNGSTEN, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> TUNGSTEN_BOOTS = ITEMS.register("tungsten_boots",
+            () -> new ArmorItem(ModArmorMaterials.TUNGSTEN, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
