@@ -19,6 +19,7 @@ public class TungstenLampBlock extends Block {
 
     public TungstenLampBlock(Properties p_49795_) {
         super(p_49795_);
+        this.registerDefaultState(this.defaultBlockState().setValue(CLICKED, false));
     }
 
     @Override
