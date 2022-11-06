@@ -38,6 +38,8 @@
 
   "item.coursemod.dowsing_rod.no_valuables": "Nothing valuable found",
   "tooltip.coursemod.dowsing_rod.tooltip.shift": "Press [Shift] for more information.\n\nRight click on block to find valuable ores",
-  "tooltip.coursemod.dowsing_rod.tooltip": "Press [Shift] for more information."
+  "tooltip.coursemod.dowsing_rod.tooltip": "Press [Shift] for more information.",
+
+  "enchantment.coursemod.lightning_striker": "Lightning Striker"
 
 }
