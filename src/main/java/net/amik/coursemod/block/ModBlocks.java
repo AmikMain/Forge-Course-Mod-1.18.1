@@ -3,6 +3,7 @@ package net.amik.coursemod.block;
 import net.amik.coursemod.CourseMod;
 import net.amik.coursemod.block.custom.SemiDoorBlock;
 import net.amik.coursemod.block.custom.SpeedyBlock;
+import net.amik.coursemod.block.custom.TungstenLampBlock;
 import net.amik.coursemod.item.ModCreativeModeTab;
 import net.amik.coursemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -66,6 +67,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> TUNGSTEN_LAMP = registerBlock("tungsten_lamp.json",
+            () -> new TungstenLampBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(TungstenLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn =  BLOCKS.register(name,block);
