@@ -2,5 +2,13 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "coursemod:item/data_tablet_off"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "coursemod:on": 1
+      },
+      "model": "coursemod:item/data_tablet_on"
+    }
+  ]
 }

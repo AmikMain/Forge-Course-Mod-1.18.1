@@ -3,6 +3,7 @@ package net.amik.coursemod;
 import net.amik.coursemod.block.ModBlocks;
 import net.amik.coursemod.enchantment.ModEnchantments;
 import net.amik.coursemod.item.ModItems;
+import net.amik.coursemod.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -58,6 +59,8 @@ public class CourseMod
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_TRAPDOOR.get(), RenderType.cutout());
+
+        ModItemProperties.addCustomItemProperties();
     }
 
 
