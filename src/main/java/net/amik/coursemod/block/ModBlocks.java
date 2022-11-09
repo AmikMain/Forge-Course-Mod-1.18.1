@@ -68,7 +68,7 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_LAMP = registerBlock("tungsten_lamp.json",
+    public static final RegistryObject<Block> TUNGSTEN_LAMP = registerBlock("tungsten_lamp",
             () -> new TungstenLampBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(TungstenLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
 

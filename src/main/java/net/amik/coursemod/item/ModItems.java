@@ -63,6 +63,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TUNGSTEN_HORSE_ARMOR = ITEMS.register("tungsten_horse_armor",
             () -> new HorseArmorItem(12, "tungsten", new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
