@@ -1,6 +1,7 @@
 package net.amik.coursemod.block;
 
 import net.amik.coursemod.CourseMod;
+import net.amik.coursemod.block.custom.PancakeCropBlock;
 import net.amik.coursemod.block.custom.SemiDoorBlock;
 import net.amik.coursemod.block.custom.SpeedyBlock;
 import net.amik.coursemod.block.custom.TungstenLampBlock;
@@ -72,6 +73,9 @@ public class ModBlocks {
             () -> new TungstenLampBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(TungstenLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> PANCAKE_CROP = BLOCKS.register("pancake_crop",
+            () -> new PancakeCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
+                    .requiresCorrectToolForDrops().noCollission().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn =  BLOCKS.register(name,block);

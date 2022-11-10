@@ -53,12 +53,12 @@ public class CourseMod
     }
 
     // add to the MCCourseMod Constructor
-    //
 
     // Add Method
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_TRAPDOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PANCAKE_CROP.get(), RenderType.cutout());
 
         ModItemProperties.addCustomItemProperties();
     }

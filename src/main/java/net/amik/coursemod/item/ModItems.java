@@ -1,6 +1,7 @@
 package net.amik.coursemod.item;
 
 import net.amik.coursemod.CourseMod;
+import net.amik.coursemod.block.ModBlocks;
 import net.amik.coursemod.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -29,7 +30,7 @@ public class ModItems {
             () -> new FireWoodItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> PANCAKE = ITEMS.register("pancake",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).food(ModFoods.PANCAKE)));
+            () -> new ItemNameBlockItem(ModBlocks.PANCAKE_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).food(ModFoods.PANCAKE)));
 
     public static final RegistryObject<Item> TUNGSTEN_SWORD = ITEMS.register("tungsten_sword",
             () -> new LevitationSwordItem(ModTiers.TUNGSTEN, 3, 0f, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
