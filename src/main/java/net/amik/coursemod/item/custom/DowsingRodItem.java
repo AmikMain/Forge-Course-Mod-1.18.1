@@ -1,6 +1,7 @@
 package net.amik.coursemod.item.custom;
 
 import net.amik.coursemod.item.ModItems;
+import net.amik.coursemod.sound.ModSounds;
 import net.amik.coursemod.util.InventoryUtil;
 import net.amik.coursemod.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
@@ -9,6 +10,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -45,6 +47,9 @@ public class DowsingRodItem extends Item {
                     if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())){
                         addNbtToDataTablet(player, positionClicked.below(i), blockBelow);
                     }
+
+                    pContext.getLevel().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE.get(), SoundSource.BLOCKS
+                    ,1f,1f);
 
                     break;
                 }

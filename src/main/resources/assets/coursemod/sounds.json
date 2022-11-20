@@ -1,0 +1,8 @@
+{
+  "dowsing_rod_found_ore": {
+    "subtitle": "coursemod.dowsing_rod_found_ore",
+    "sounds": [
+      "coursemod:dowsing_rod_found_ore"
+    ]
+  }
+}

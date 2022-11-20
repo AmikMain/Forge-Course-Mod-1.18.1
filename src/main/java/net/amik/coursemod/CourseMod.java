@@ -3,6 +3,7 @@ package net.amik.coursemod;
 import net.amik.coursemod.block.ModBlocks;
 import net.amik.coursemod.enchantment.ModEnchantments;
 import net.amik.coursemod.item.ModItems;
+import net.amik.coursemod.sound.ModSounds;
 import net.amik.coursemod.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -43,6 +44,7 @@ public class CourseMod
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModEnchantments.register(eventBus);
+        ModSounds.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
