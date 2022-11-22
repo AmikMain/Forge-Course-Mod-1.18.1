@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "coursemod:block/tungsten_blaster" },
+    "facing=east": { "model": "coursemod:block/tungsten_blaster", "y": 90 },
+    "facing=south": { "model": "coursemod:block/tungsten_blaster", "y": 180 },
+    "facing=west": { "model": "coursemod:block/tungsten_blaster", "y": 270 }
+  }
+}

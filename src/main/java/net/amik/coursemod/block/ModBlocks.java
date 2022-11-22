@@ -1,10 +1,7 @@
 package net.amik.coursemod.block;
 
 import net.amik.coursemod.CourseMod;
-import net.amik.coursemod.block.custom.PancakeCropBlock;
-import net.amik.coursemod.block.custom.SemiDoorBlock;
-import net.amik.coursemod.block.custom.SpeedyBlock;
-import net.amik.coursemod.block.custom.TungstenLampBlock;
+import net.amik.coursemod.block.custom.*;
 import net.amik.coursemod.item.ModCreativeModeTab;
 import net.amik.coursemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -76,6 +73,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> PANCAKE_CROP = BLOCKS.register("pancake_crop",
             () -> new PancakeCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
                     .requiresCorrectToolForDrops().noCollission().noOcclusion()));
+
+
+    public static final RegistryObject<Block> TUNGSTEN_BLASTER = registerBlock("tungsten_blaster",
+            () -> new TungstenBlasterBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn =  BLOCKS.register(name,block);
