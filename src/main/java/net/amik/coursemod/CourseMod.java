@@ -2,6 +2,7 @@ package net.amik.coursemod;
 
 import net.amik.coursemod.block.ModBlocks;
 import net.amik.coursemod.enchantment.ModEnchantments;
+import net.amik.coursemod.fluid.ModFluids;
 import net.amik.coursemod.item.ModItems;
 import net.amik.coursemod.sound.ModSounds;
 import net.amik.coursemod.util.ModItemProperties;
@@ -35,8 +36,6 @@ public class CourseMod
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-
-    //very important commen
     public CourseMod() {
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -45,6 +44,8 @@ public class CourseMod
         ModBlocks.register(eventBus);
         ModEnchantments.register(eventBus);
         ModSounds.register(eventBus);
+        ModFluids.register(eventBus);
+
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -63,6 +64,9 @@ public class CourseMod
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_TRAPDOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PANCAKE_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TUNGSTEN_BLASTER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_TUNGSTEN_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_TUNGSTEN_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_TUNGSTEN_FLOWING.get(), RenderType.translucent());
 
         ModItemProperties.addCustomItemProperties();
     }

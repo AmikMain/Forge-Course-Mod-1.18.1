@@ -2,6 +2,7 @@ package net.amik.coursemod.item;
 
 import net.amik.coursemod.CourseMod;
 import net.amik.coursemod.block.ModBlocks;
+import net.amik.coursemod.fluid.ModFluids;
 import net.amik.coursemod.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -64,6 +65,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> TUNGSTEN_HORSE_ARMOR = ITEMS.register("tungsten_horse_armor",
             () -> new HorseArmorItem(12, "tungsten", new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> MOLTEN_TUNGSTEN_BUCKET = ITEMS.register("molten_tungsten_bucket",
+            () -> new BucketItem(ModFluids.MOLTEN_TUNGSTEN_FLUID, new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
