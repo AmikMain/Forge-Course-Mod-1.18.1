@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values":[
+    "coursemod:molten_tungsten_fluid",
+    "coursemod:molten_tungsten_flowing"
+  ]
+}

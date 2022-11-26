@@ -40,7 +40,7 @@ public class ModFluids {
             .block(() -> ModFluids.MOLTEN_TUNGSTEN_BLOCK.get()).bucket(() -> ModItems.MOLTEN_TUNGSTEN_BUCKET.get());
 
     public static final RegistryObject<LiquidBlock> MOLTEN_TUNGSTEN_BLOCK = ModBlocks.BLOCKS.register("molten_tungsten",
-            () -> new LiquidBlock(() -> ModFluids.MOLTEN_TUNGSTEN_FLUID.get(), BlockBehaviour.Properties.of(Material.LAVA)
+            () -> new LiquidBlock(() -> ModFluids.MOLTEN_TUNGSTEN_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops()));
     //FlowingFluidBlock
     public static void register(IEventBus eventBus) {
