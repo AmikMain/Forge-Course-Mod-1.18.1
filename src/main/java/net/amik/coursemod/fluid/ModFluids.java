@@ -36,7 +36,7 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties MOLTEN_TUNGSTEN_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOLTEN_TUNGSTEN_FLUID.get(), () -> MOLTEN_TUNGSTEN_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
             .density(15).luminosity(2).viscosity(5).sound(SoundEvents.HONEY_DRINK).overlay(WATER_OVERLAY_RL)
-            .color(0x5294)).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .color(0xbffcba03)).slopeFindDistance(2).levelDecreasePerBlock(2)
             .block(() -> ModFluids.MOLTEN_TUNGSTEN_BLOCK.get()).bucket(() -> ModItems.MOLTEN_TUNGSTEN_BUCKET.get());
 
     public static final RegistryObject<LiquidBlock> MOLTEN_TUNGSTEN_BLOCK = ModBlocks.BLOCKS.register("molten_tungsten",
