@@ -1,6 +1,7 @@
 package net.amik.coursemod;
 
 import net.amik.coursemod.block.ModBlocks;
+import net.amik.coursemod.block.entity.ModBlockEntities;
 import net.amik.coursemod.enchantment.ModEnchantments;
 import net.amik.coursemod.fluid.ModFluids;
 import net.amik.coursemod.item.ModItems;
@@ -45,7 +46,7 @@ public class CourseMod
         ModEnchantments.register(eventBus);
         ModSounds.register(eventBus);
         ModFluids.register(eventBus);
-
+        ModBlockEntities.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
